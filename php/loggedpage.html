@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <header>
+      <img src="logo.png" alt="Website Logo" class="float-left" style="filter: drop-shadow(0px 0px 5px white);">
+      <nav class="nav justify-content-center">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="loggedpage.html " style="color: white; font-family: 'Boulder', sans-serif; text-shadow: 0.5px 0.5px 0.5px #000000;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html" style="color: white; font-family: 'Boulder', sans-serif; text-shadow: 0.5px 0.5px 0.5px #000000;">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#submission-section" style="color: white; font-family: 'Boulder', sans-serif; text-shadow: 0.5px 0.5px 0.5px #000000;">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav justify-content-end">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="logout.php" >Logout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signup.php" >Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="welcome-section d-flex align-items-center" style="background-image: url('https://i.ibb.co/F7dTL0s/cclass.jpg'); background-repeat: no-repeat; background-size: cover; background-position: left; background-attachment: fixed; height: 500px;">
+        <div class="container text-center">
+          <h1 class="display-3 text-black font-weight-bold" style="text-shadow: 2px 2px 2px white">Skelë Car Rental</h1>
+          <p class="text-black font-weight-bold" style="text-shadow: 2px 2px 2px white">Comfort and Safety at your choosing</p>
+      </div>
+      </section>
+        <section class="about-section">
+          <h2 class="text-center my-5">THANK YOU</h2>
+          <p class="text-center font-weight-light">For choosing to join our customer community.</p>
+        </section>
+    </main>
+    <section class="car-listing-section py-5">
+      <h2 class="text-center pb-5">Our Fleet</h2>
+     <ul class="car-list d-flex justify-content-around">
+      <li class="card" style="width: 18rem;">
+        <img src="car1.png" alt="CLA" class="card-img-top" style="height: 150px; width: 100%; object-fit: contain">
+        <form action="order.php" method="post">
+        <div class="card-body">
+          <h3 class="card-title text-center">CLA</h3>
+          <p class="card-text">
+            Engine: 1.6L 4-Cylinder<br>
+            Power: 121 HP<br>
+            Transmission: 7-speed Dual-Clutch Automatic<br>
+            Seating Capacity: 5
+          </p>
+          <button type="submit" class="btn btn-primary btn-block">Order Online</button>
+        </div>
+        </form>
+      </li>
+      <li class="card" style="width: 18rem;">
+        <img src="car2.png" alt="SUV" class="card-img-top" style="height: 150px; width: 100%; object-fit: contain">
+        <form action="order.php" method="post">
+        <div class="card-body">
+          <h3 class="card-title text-center">KIA Sportage</h3>
+          <p class="card-text">
+            Engine: 2.0L 4-Cylinder<br>
+            Power: 181 HP<br>
+            Transmission: 6-speed Automatic<br>
+            Seating Capacity: 5
+          </p>
+          <button type="submit" class="btn btn-primary btn-block">Order Online</button>
+        </div>
+        </form>
+      </li>
+      <li class="card" style="width: 18rem;">
+        <img src="car3.png" alt="Sports Car" class="card-img-top" style="height: 150px; width: 100%; object-fit: contain">
+        <form action="order.php" method="post">
+        <div class="card-body">
+          <h3 class="card-title text-center">Peugeot 308 cc</h3>
+          <p class="card-text">
+            Engine: 1.6L 4-Cylinder<br>
+            Power: 120 HP<br>
+            Transmission: 6-speed Automatic<br>
+            Seating Capacity: 4
+          </p>
+          <button type="submit" class="btn btn-primary btn-block">Order Online</button>
+        </div>
+        </form>
+      </li>
+    </ul>
+  </section>
+  <br>
+<p>
+    </p>
+</br>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Go Up</button>
+<script>
+
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<footer class="mt-5">
+    <p class="text-center">Copyright © 2023 Fatjon Canaj</p>
+  </footer>
+  </body>
+  </html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <header>
+      <img src="logo.png" alt="Website Logo" class="float-left" style="filter: drop-shadow(0px 0px 5px white);">
+      <nav class="nav justify-content-center">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="Test.html" style="color: white; font-family: 'Boulder', sans-serif; text-shadow: 0.5px 0.5px 0.5px #000000;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: white; font-family: 'Boulder', sans-serif; text-shadow: 0.5px 0.5px 0.5px #000000;">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#submission-section" style="color: white; font-family: 'Boulder', sans-serif; text-shadow: 0.5px 0.5px 0.5px #000000;">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav justify-content-end">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#" >Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signup.html" >Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="welcome-section d-flex align-items-center" style="background-image: url(background-img.jpg); background-repeat: no-repeat; background-size: cover; background-position: left; background-attachment: fixed; height: 500px;">
+        <div class="container text-center">
+          <h1 class="display-3 text-black font-weight-bold" style="text-shadow: 2px 2px 2px white">Skelë Car Rental</h1>
+          <p class="text-black font-weight-bold" style="text-shadow: 2px 2px 2px white">Comfort and Safety at your choosing</p>
+      </div>
+      </section>
+      <section class="about-section py-5">
+        <h2 class="text-center my-5">About Us</h2>
+        <p class="text-center font-weight-light">Welcome to Skelë Rental, your ultimate source for hassle-free car rental services. We are a team of passionate individuals who believe in providing exceptional and affordable car rental services to make your travel experience as smooth as possible.</p>
+        <p class="text-center font-weight-light">At Skelë Rental, we take pride in our modern and well-maintained fleet of vehicles, which include a wide range of options to suit all your travel needs. Our commitment to excellence has made us one of the most trusted names in the car rental industry.</p>
+        <p class="text-center font-weight-light">We understand that every traveler is unique and has specific requirements, which is why we offer a wide range of customization options, from vehicle type to rental duration. Our easy-to-use online booking system allows you to reserve your rental car at the best rate, without any hidden fees.</p>
+        <p class="text-center font-weight-light">Our goal is to provide you with an exceptional car rental experience, which is why we have a team of dedicated and knowledgeable customer support representatives available 24/7 to assist you with any queries or concerns you may have. Whether you're planning a road trip, need a rental car for your business trip or simply need a reliable mode of transportation, Skelë Rental is here to make your experience seamless and stress-free.</p>
+        <p class="text-center font-weight-light">Thank you for choosing Skelë Rental for all your car rental needs. We look forward to serving you soon!</p>
+      </section>
+    </main>
+    <br>
+<p>
+    </p>
+</br>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Go Up</button>
+<script>
+
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<footer class="mt-5">
+    <p class="text-center">Copyright © 2023 Fatjon Canaj</p>
+  </footer>
+  </body>
+  </html>

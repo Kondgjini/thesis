@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>
+       My Website
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <header>
+      <img src="logo.png" alt="Website Logo" class="float-left" style="filter: drop-shadow(0px 0px 5px white);">
+      <nav class="nav justify-content-center">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="Test.html" style="color: white; font-family: 'Boulder', sans-serif; text-shadow: 0.5px 0.5px 0.5px #000000;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html" style="color: white; font-family: 'Boulder', sans-serif; text-shadow: 0.5px 0.5px 0.5px #000000;">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" style="color: white; font-family: 'Boulder', sans-serif; text-shadow: 0.5px 0.5px 0.5px #000000;">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav justify-content-end">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="loggingin.php" >Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signup.php" >Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="welcome-section d-flex align-items-center" style="background-image: url(background-img.jpg) ; background-repeat: no-repeat; background-size: cover; background-position: left; background-attachment: fixed; height: 500px;">
+        <div class="container text-center">
+          <h1 class="display-3 text-black font-weight-bold" style="text-shadow: 2px 2px 2px white">Skelë Car Rental</h1>
+          <p class="text-black font-weight-bold" style="text-shadow: 2px 2px 2px white">Comfort and Safety at your choosing</p>
+      </div>
+      </section>
+        <section class="about-section">
+          <h2 class="text-center my-5">Welcome</h2>
+          <p class="text-center font-weight-light"><a href="loggingin.php">Log-in</a> to order NOW!</p>
+        </section>
+    </main>
+    <section class="car-listing-section py-5">
+      <h2 class="text-center">What we offer</h2>
+  <ul class="car-list d-flex justify-content-around">
+    <li class="card" style="width: 18rem;">
+      <img src="sedan.png" alt="Sedan" class="card-img-top" style="height: 150px; width: 100%; object-fit: contain">
+      <div class="card-body">
+        <h3 class="card-title text-center">Sedan</h3>
+        <p class="card-text">Comfortable and spacious car perfect for long drives.</p>
+      </div>
+    </li>
+    <li class="card" style="width: 18rem;">
+      <img src="SUV.png" alt="SUV" class="card-img-top" style="height: 150px; width: 100%; object-fit: contain">
+      <div class="card-body">
+        <h3 class="card-title text-center">SUV</h3>
+        <p class="card-text">Perfect for families or groups of friends with plenty of room for luggage and passengers.</p>
+      </div>
+    </li>
+    <li class="card" style="width: 18rem;">
+      <img src="sports-car.png" alt="Sports Car" class="card-img-top" style="height: 100px; width: 100%; object-fit: contain">
+      <div class="card-body">
+        <h3 class="card-title text-center">Sports Car</h3>
+        <p class="card-text">For those looking for a thrilling driving experience with a high-performance engine and sleek design.</p>
+      </div>
+    </li>
+  </ul>
+</section>
+<section class="submission-section mt-5" id="contact">
+  <div class="container">
+    <h2 class="text-center mb-5">Submit your request Online</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form action="#">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Go Up</button>
+<script>
+
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<footer class="mt-5">
+  <p class="text-center">Copyright © 2023 Fatjon Canaj</p>
+</footer>
+</body>
+</html>
